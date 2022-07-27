@@ -12,6 +12,7 @@ import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlSchemaType;
 import jakarta.xml.bind.annotation.XmlType;
+import org.springframework.stereotype.Component;
 
 
 /**
@@ -454,6 +455,7 @@ import jakarta.xml.bind.annotation.XmlType;
     "account"
 })
 @XmlRootElement(name = "ClientAccountsAbs")
+@Component
 public class ClientAccountsAbs {
 
     @XmlElement(name = "EventTimestamp")
@@ -6500,7 +6502,7 @@ public class ClientAccountsAbs {
         public static class DboInfo {
 
             @XmlElement(name = "DboInfo", required = true)
-            protected List<ClientAccountsAbs.Account.DboInfo.DboInfo> dboInfo;
+            protected List<ClientAccountsAbs.Account.DboInfo.DboInfoo> dboInfo;
 
             /**
              * Gets the value of the dboInfo property.
@@ -6524,9 +6526,9 @@ public class ClientAccountsAbs {
              * 
              * 
              */
-            public List<ClientAccountsAbs.Account.DboInfo.DboInfo> getDboInfo() {
+            public List<ClientAccountsAbs.Account.DboInfo.DboInfoo> getDboInfo() {
                 if (dboInfo == null) {
-                    dboInfo = new ArrayList<ClientAccountsAbs.Account.DboInfo.DboInfo>();
+                    dboInfo = new ArrayList<ClientAccountsAbs.Account.DboInfo.DboInfoo>();
                 }
                 return this.dboInfo;
             }
@@ -6559,7 +6561,7 @@ public class ClientAccountsAbs {
                 "dboName",
                 "isActive"
             })
-            public static class DboInfo {
+            public static class DboInfoo {
 
                 @XmlElement(name = "DboCode", required = true)
                 protected String dboCode;

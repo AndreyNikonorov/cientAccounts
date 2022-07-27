@@ -126,11 +126,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ClientAccountsAbs.Account.DboInfo.DboInfo }
+     * Create an instance of {@link ClientAccountsAbs.Account.DboInfo.DboInfoo }
      * 
      */
-    public ClientAccountsAbs.Account.DboInfo.DboInfo createClientAccountsAbsAccountDboInfoDboInfo() {
-        return new ClientAccountsAbs.Account.DboInfo.DboInfo();
+    public ClientAccountsAbs.Account.DboInfo.DboInfoo createClientAccountsAbsAccountDboInfoDboInfo() {
+        return new ClientAccountsAbs.Account.DboInfo.DboInfoo();
     }
 
     /**
